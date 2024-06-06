@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
 
-* {
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,14 +14,115 @@
 
 .first{
     background-color: rgb(201, 233, 246);
-    padding-top: 2rem;
-    padding-bottom: 15rem;
+    padding-top:3rem;
+/*     padding-bottom: 15rem; */
 }
 
-.first .top{
+.first-top{
     justify-content: center;
 }
 
+.first .image img{
+display: block;
+margin: auto;
+margin-top: 150px;
+}
+
+/* .education{
+    justify-content: center;
+} */
+
+.skill img{
+    width: 300px;
+    display: block;
+/*     margin-top: 4rem;
+    justify-content: center;
+    margin-left: 40%; */
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.skill h1{
+    color: rgb(57, 157, 224);
+    margin-top: auto;
+}
+
+.skill p{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 35%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.Teach{
+    justify-content: center;
+}
+
+.Teach h1{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.Teach img{
+    width: 200px;
+    margin-top: 0;
+}
+
+.web-developer{
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.text1{
+    flex-direction: column;
+    text-align: left;
+}
+
+.text1 p{
+    text-align: left;
+    margin: 20px;
+}
+
+hr{
+    width: 60%;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.web-developer h3{
+    color: rgb(57, 157, 224);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+.web-developer p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace
+    margin-left: 20px;
+}
+
+.faculty{
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.faculty h3{
+    color: rgb(57, 157, 224);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 20px;
+}
+
+.faculty p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace
+    margin-left: 20px;
+}
 
 h1 {
     text-align: center;
@@ -28,6 +135,12 @@ p {
     margin-top: 1rem;
     color: rgb(57, 157, 224);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.text2 p{
+    text-align: left;
+    margin: 0;
+    margin-right: 20px;
 }
 
 .container{
@@ -56,7 +169,8 @@ padding-bottom: 30px;
 .container .heading2 h3{
 font-size: 2rem;
 font-weight: bolder;
-border-bottom: 3px solid black;
+color: green;
+border-bottom: 3px solid rgb(57, 157, 224);
 }
 /* .box .dream {
     display: flex;
@@ -66,14 +180,20 @@ border-bottom: 3px solid black;
 }
  */
 
-.box .dream{
-justify-content: space-evenly;
+.box {
+display: grid;
+align-items: center;
+margin-left:20%;
 margin-bottom: 20px;
 max-width: 80%;
 align-items: center;
+align-content: center;
 }
  .box .dream img{
-flex-wrap: wrap;
+display: inline;
+align-items: center;
+margin-left: 50%;
+/* grid-template-rows: repeat(3,2fr); */
 width: 300px;
 height: 300px;
 margin: 1px 1px;
@@ -97,6 +217,7 @@ font-family: 'Times New Roman', Times, serif;
 
 .button{
 margin-top: 50px;
+margin-left: 60%;
 padding: 5px;
 background-color: rgb(72, 168, 233);
 border-radius: 5px;
@@ -111,10 +232,37 @@ background-color: lime;
 }
 
 .footer{
-    background-color: rgb(72, 168, 233);
+color: rgb(72, 168, 233);
 }
 
-.footercontainer{
-width: 100%;
-padding: 70px 30px 20px;
+.ending{
+background-color: rgb(72, 168, 233);
+justify-content: center;
+margin: auto;
+}
+
+.footernav{
+display: inline-flex;
+justify-content: space-between;
+text-decoration: none;
+}
+
+.footernav li{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    
+}
+
+.footerbottom{
+    padding: 50px;
+}
+.footerbottom p{
+    color: white;
 }
